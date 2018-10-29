@@ -1,0 +1,41 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div style="text-align:center">
+  <div class="container">
+    <div id="header">
+      <h3>Let's cook</h3></div>
+    <div id="calc" class="text-center">
+      <div id="display">
+        <div id="result"><p>{{cusine}}</p></div>
+      </div>
+      <div id="keyboard">
+        <div class="row">
+          <button class="btn btn-info" (click)="add1()">onion</button>
+          <button class="btn btn-info" (click)="add2()">chicken</button>
+          <button class="btn btn-info" (click)="add3()">garlic</button>
+
+        </div>
+        <div class="row">
+          <button class="btn btn-info" (click)="add4()">curry</button>
+          <button class="btn btn-info" (click)="add5()">egg</button>
+          <button class="btn btn-info" (click)="add6()">orange</button>
+
+        </div>
+        <div class="row">
+          <button class="btn btn-info" (click)="add7()">carrot</button>
+          <button class="btn btn-info" (click)="add8()">potato</button>
+          <button class="btn btn-info" (click)="add9()">lettuce</button>
+
+
+        </div>
+        <div class="row last-row">
+          <button class="btn btn-info btn-zero" (click)="add10()">Magic Seasoning</button>
+          <button *ngIf="init" class="btn btn-warning" (click)="cook()">cook</button>
+          <button *ngIf="!init" class="btn btn-restart" (click)="restart()">restart</button>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
